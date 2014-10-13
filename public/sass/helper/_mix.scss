@@ -1,0 +1,21 @@
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  	padding: $padding-vertical $padding-horizontal;
+  	font-size: $font-size;
+  	line-height: $line-height;
+  	border-radius: $border-radius;
+}
+@mixin button-type($btn-bg,$btn-color,$btn-border) {
+  	background: $btn-bg;
+	color: $btn-color;
+	border-color: $btn-border;
+}
+@mixin button-hover-active($btn-bg,$btn-border) {
+  	&:hover {
+		background: adjust-lightness($btn-bg,10%);
+		border-color: adjust-lightness($btn-border,10%)
+	}
+	&:active {
+		background: darken($btn-bg,10%);
+		border-color:adjust-lightness($btn-border,-10%);
+	}
+}

@@ -1,0 +1,52 @@
+.btn {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	white-space: nowrap;
+	background: none;
+	border: 1px solid transparent;
+	padding: $padding-base-vertical $padding-base-horizontal;
+	border-radius: $border-radius-base;
+	font-size: $font-size-base;
+
+	&:active {
+
+	}
+	&[disabled] {
+		cursor: not-allowed;
+		pointer-events: none;
+		opacity: 0.5;
+	}
+
+	&:hover {
+
+	}
+}
+
+.btn-primary {
+	@include button-type($btn-primary-bg,$btn-primary-color,$btn-primary-border);
+	@include button-hover-active($btn-primary-bg,$btn-primary-border);
+}
+.btn-info {
+	@include button-type($btn-info-bg,$btn-info-color,$btn-info-border);
+	@include button-hover-active($btn-info-bg,$btn-info-border);
+}
+.btn-tip {
+	@include button-type($btn-tip-bg,$btn-tip-color,$btn-tip-border);
+	@include button-hover-active($btn-tip-bg,$btn-tip-border);
+}
+.btn-error {
+	@include button-type($btn-error-bg,$btn-error-color,$btn-error-border);
+	@include button-hover-active($btn-error-bg,$btn-error-border);
+}
+.btn-lg {
+	@include button-size($padding-large-vertical,$padding-large-horizontal,$font-size-large,$line-height-large,$border-radius-large)
+}
+.btn-sm {
+	@include button-size($padding-small-vertical,$padding-small-horizontal,$font-size-small,$line-height-small,$border-radius-small)
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}

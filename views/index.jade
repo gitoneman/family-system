@@ -1,0 +1,31 @@
+extends layout
+
+block body
+	div#g-doc
+		div#header
+			nav.navbar.navbar-default
+				div.container-fluid
+					div.navbar-header
+						a.navbar-brand Home
+					div.collapse.navbar-collapse
+						ul.nav.navbar-nav
+							li.active
+								a(ui-sref="dashboard") link
+							li
+								a(href="#") link
+						ul.nav.navbar-nav.navbar-right
+							li
+								a.dropdown-toggle(href="#") user
+									span.caret
+		div#main(ui-view)
+		div#footer
+
+	script(src='/js/lib/jquery/jquery.min.js')
+	script(src='/js/lib/charts/echarts-plain-original-map.js')
+	script(src='/js/lib/bootstrap/bootstrap.min.js')
+	script(src='/js/lib/angular/angular.js')
+	script(src='/js/lib/angular/angular-ui-router.min.js')
+	script(src='/js/controllers/dashboard.js')
+	script(src='/js/filters/link.js')
+	script(src='/js/directives/chart.js')
+	script(src='/js/app.js')

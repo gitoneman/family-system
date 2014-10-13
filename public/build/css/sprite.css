@@ -1,0 +1,35 @@
+.icon-arrow-right {
+    background-position: 0px 0px;
+    width:16px;
+    height: 16px;
+}
+.icon-charts {
+    background-position: 0px -16px;
+    width:26px;
+    height: 26px;
+}
+.icon-dashboard {
+    background-position: 0px -42px;
+    width:26px;
+    height: 26px;
+}
+.icon-formStuff {
+    background-position: 0px -68px;
+    width:26px;
+    height: 26px;
+}
+.icon-layouts {
+    background-position: 0px -94px;
+    width:26px;
+    height: 26px;
+}
+.icon-tables {
+    background-position: 0px -120px;
+    width:26px;
+    height: 26px;
+}
+.icon-uiElement {
+    background-position: 0px -146px;
+    width:26px;
+    height: 26px;
+}
