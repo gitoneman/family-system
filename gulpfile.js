@@ -25,13 +25,14 @@ gulp.task("default",function(){
 });
 
 gulp.task('compass', function() {
-  gulp.src('public/sass/*.scss')
-  .pipe(compass({
-    config_file: 'public/config.rb',
-    css: 'public/stylesheets',
-    sass: 'public/sass'
-  }))
-  .pipe(gulp.dest('public/stylesheets'));
+	return gulp
+	  	.src('public/sass/*.scss')
+	  	.pipe(compass({
+	    	config_file: 'public/config.rb',
+	    	css: 'public/stylesheets',
+	    	sass: 'public/sass'
+	  	}))
+	  	.pipe(gulp.dest('public/stylesheets'));
 });
 
 
@@ -46,7 +47,7 @@ gulp.task('sprite', function () {
   spriteData.css.pipe(gulp.dest('public/build/css/'));
 });
 
-gulp.task("watch",function(){
+gulp.task("watch",function(){	
 	gulp.watch("public/sass/*",["compass"]);
 
 	var sever = livereload();
