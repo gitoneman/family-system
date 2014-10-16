@@ -49,9 +49,10 @@ gulp.task('sprite', function () {
 
 gulp.task("watch",function(){	
 	gulp.watch("public/sass/*",["compass"]);
+	gulp.watch("public/sass/component/*",["compass"]);
 
 	var sever = livereload();
-	gulp.watch(["public/stylesheets/style.css"]).on("change",function(file){
+	gulp.watch(["public/stylesheets/style.css","public/partials/index.html"]).on("change",function(file){
 		sever.changed(file.path);
 	});
 })

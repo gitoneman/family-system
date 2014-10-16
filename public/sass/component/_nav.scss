@@ -1,0 +1,16 @@
+.nav-horizital { height:40px;line-height: 40px;border-bottom:1px solid #aaa;}
+.nav .nav-left {
+	float:left;
+	overflow: hidden;
+	li {
+		float:left;
+	}
+}
+.nav .nav-right {
+	float:right;
+	overflow:hidden;
+	li {
+		float:right;
+	}
+}
+.nav li { padding:0 10px;}

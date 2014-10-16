@@ -24,3 +24,9 @@
 @import "component/loading";
 @import "component/tip";
 @import "component/tab";
+
+* {box-sizing:border-box;}
+body,html { width:100%;height:100%;}
+.g-doc { height: 100%; position: relative;}
+.g-side { position:fixed; top:0; left:0; bottom:0;}
+.g-main { position:absolute; right:0; top:0; bottom:0;}
